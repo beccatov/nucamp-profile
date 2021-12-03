@@ -1,0 +1,41 @@
+body {
+    background: rgb(255, 255, 255);
+    font-family: Arial, Times, sans-serif;
+}
+
+h1 {
+    color: rgb(194, 157, 154);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.pp-border {
+    border: 5px solid rgb(182, 130, 111);
+    padding: 3px;
+}
+
+h5 {
+    color:rgb(194, 157, 154);
+}
+
+h2 {
+    color:rgb(194, 157, 154);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.list-style1 {
+    color: rgb(194, 157, 154);
+}
+
+h2 {
+    color:rgb(194, 157, 154);
+}
+
+.ul-style {
+    color:rgb(194, 157, 154);
+}
+
+.diesel-border {
+    border: 5px dotted rgb(182, 130, 111);
+    padding: 3px;
+}
+
