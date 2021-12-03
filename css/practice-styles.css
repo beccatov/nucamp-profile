@@ -1,16 +1,16 @@
 body {
-    background: #fffff9;
+    background: #fafaea;
     font-family: Tahoma, Arial, sans-serif;
 }
 
 h1 {
     color: rgb(23, 165, 158);
-    font: 32px Garamond, Helvetica, serif;
+    font: 32px 'Times New Roman', Times, serif;
 }
 
 table {
     width: 50%;
-    border: 2px solid rgb(23, 165, 158);
+    border: 5px double rgb(23, 165, 158);
 }
 
 thead {
@@ -23,10 +23,23 @@ label {
 
 #submit-btn {
     display: block;
+    color:rgb(22, 151, 145)
 }
 
 
 .heading-style {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(23, 165, 158);
+    text-decoration: underline;
 }
+
+#tableheading {
+    font-size: 20px;
+}
+
+.address-border {
+    border: 3px double rgb(23, 165, 158);
+    padding: 5px;
+    display: inline-flex;
+}
+

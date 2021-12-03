@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="css/practice-styles.css" />
 </head>
 <body>
-    <h1>CSS Corner Cafe</h1>
+    <h1><strong>CSS Corner Cafe</strong></h1>
     <section>
         <h2 class="heading-style">Menu</h2>
         <table>
             <thead>
                 <tr>
-                    <th class="heading-style">Item</th>
-                    <th>Cost</th>
+                    <th class="heading-style" id="tableheading">Item</th>
+                    <th class="heading-style" id="tableheading">Cost</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,11 +49,15 @@
     <section>
         <h2 class="heading-style">Contact</h2>
         <p>Call us at: <a href="tel:+15555551212">1-555-555-1212</a></p>
-        <address>
+        
+    <div class="address-border">
+        <strong><address class="heading-style">
             CSS Corner Cafe<br />
             101 W Main St<br />
             Bellevue, WA 98004
-        </address>
+        </address></strong>
+    </div>
+   
     </section>
 </body>
 </html>
