@@ -1,6 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+    body {
+        font-family: Verdana, Arial, sans-serif;
+    }
+    
+    p {
+        margin: 0;
+    }
+
+    legend {
+        background: purple;
+        border-radius: 10px;
+        color: white;
+        padding: 12px;
+    }
+
+    fieldset {
+        background: lavender;
+        border: 10px solid darkblue;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        width: 720px;
+    }
+
+    div {
+        margin: 10px;
+    }
+
+    label {
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+        width: 200px;
+    }
+
+    input[type="radio"]+label, input[type="checkbox"]+label {
+        width: auto;
+    }
+
+    .range-caption {
+        background: darkcyan;
+        color: white;
+        padding: 6px;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        background: darkcyan;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    div:hover {
+        color: blue;
+    }
+
+</style>
     <meta charset="utf-8" />
 </head>
 <body>
@@ -72,7 +131,7 @@
                 <textarea cols="40" id="address" name="address"></textarea>
             </div>
             <div>
-                <label>Contact Method(s):</label>
+                <label>Contact method(s):</label>
                 <input type="checkbox" name="contact" id="emailCheckbox" value="email" />
                 <label for="emailCheckbox">Email</label>
                 <input type="checkbox" name="contact" id="phoneCheckbox" value="phone" />
@@ -83,12 +142,6 @@
                 <input type="submit">
             </div>
     </form>
-
-
-
-
-
-
-
+    <script src="https://url.nucamp.co/datingjs"></script>
 </body>
 </html>
