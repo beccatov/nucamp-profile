@@ -11,31 +11,38 @@
     <button type="button" onclick="runGame()">Start Game</button>
     <script>
         const COLORS_ARRAY = ["blue", "cyan", "gold", "gray", "green", "magenta", "orange", "red", "white", "yellow"];
-        
 
+        const newArray = COLORS_ARRAY.join(", "); // New Array
+        console.log(newArray + " This is newArray.");
+        
+        // Run Program
 
         function runGame() {
             let guess = "";
             let correct = false;
             const targetIndex = Math.random(COLORS_ARRAY.length) * 10;
-            console.log(targetIndex + " This is target index.");
+            console.log(targetIndex + " This is targetIndex.");
+            
             const randomInteger = Math.floor(targetIndex);
-            console.log(randomInteger + " This is random integer.")
+            console.log(randomInteger + " This is randomInteger.")
+            
             const target = COLORS_ARRAY[randomInteger];
+            
             let numTries = 0;
         
-
             console.log(target);
 
             do {
-                guess = prompt("I am thinking of one of these colors:\n\n" + COLORS_ARRAY + "\n\nWhat color am I thinking of?\n");
+                guess = prompt("I am thinking of one of these colors:\n\n" + newArray + "\n\nWhat color am I thinking of?\n");
                 numTries += 1;
                 if (guess === null) {
                     alert("The game has been ended.");
                     return;
                 }
                 correct = checkGuess(guess, target);
+                document.body.style.background = guess;
             } while (!correct);
+
 
             alert("You got it! The color was " + target + ".\n\nIt took you " + numTries + " tries to guess correctly.");
             
@@ -55,7 +62,7 @@
             }
             return correct;
         }
-    </script>
+   
+   </script>
 </body>
-
 </html>
