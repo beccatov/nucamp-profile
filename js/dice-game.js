@@ -13,5 +13,5 @@ function rollDice() {
         alert("Congratulations, you win " + roll + " gold coins!");
         goldCoins += roll;
     }
-    alert("You have a total of " + goldCoins + " goldCoins!");
+    alert("You have a total of " + goldCoins + " gold coins!");
 }
