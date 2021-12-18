@@ -31,7 +31,8 @@
 
         <script>
             let numberOfFaces = 5;
-            const theLeftSide = document.querySelector('#leftSide');
+            const theLeftSide = document.getElementById('leftSide');
+            const theRightSide = document.getElementById('rightSide');
 
             function generateFaces() {
                
@@ -47,6 +48,16 @@
 
                     theLeftSide.appendChild(face);
                 }
+                const leftSideImages = theLeftSide.cloneNode(true);
+                
+                leftSideImages.removeChild(leftSideImages.lastChild);
+                theRightSide.appendChild(leftSideImages);
+
+                theLeftSide[theLeftSide.length - 1].addEventListener("click", nextLevel);
+            }
+
+            function nextLevel() {
+                
             }
 
         </script>
