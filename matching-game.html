@@ -54,10 +54,17 @@
                 theRightSide.appendChild(leftSideImages);
 
                 theLeftSide[theLeftSide.length - 1].addEventListener("click", nextLevel);
+                document.body.addEventListener("click", gameOver);
             }
 
             function nextLevel() {
-                
+                event.stopPropagation();
+                numberOfFaces += 5;
+                generateFaces();
+            }
+
+            function gameOver() {
+                alert('Game Over!');
             }
 
         </script>
